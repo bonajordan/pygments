@@ -5,7 +5,7 @@
 
     The default highlighting style.
 
-    :copyright: Copyright 2006-2020 by the Pygments team, see AUTHORS.
+    :copyright: Copyright 2006-2019 by the Pygments team, see AUTHORS.
     :license: BSD, see LICENSE for details.
 """
 
@@ -28,18 +28,18 @@ class DefaultStyle(Style):
         Comment.Preproc:           "noitalic #BC7A00",
 
         #Keyword:                   "bold #AA22FF",
-        Keyword:                   "bold #008000",
+        Keyword:                   "bold #FFD801", #"bold #008000", for else if elif 
         Keyword.Pseudo:            "nobold",
         Keyword.Type:              "nobold #B00040",
 
-        Operator:                  "#666666",
-        Operator.Word:             "bold #AA22FF",
+        Operator:                  "#FFFFFF", #666666",  + - * = 
+        Operator.Word:             "bold #FFD801", #"bold #AA22FF",  in
 
-        Name.Builtin:              "#008000",
+        Name.Builtin:              "#A23BEC",   #"#008000",
         Name.Function:             "#0000FF",
         Name.Class:                "bold #0000FF",
-        Name.Namespace:            "bold #0000FF",
-        Name.Exception:            "bold #D2413A",
+        Name.Namespace:           "#FFFFFF", #"bold #0000FF",   from *math* import sin
+        Name.Exception:            "#A23BEC",  #"bold #D2413A",  Exception AssertionError
         Name.Variable:             "#19177C",
         Name.Constant:             "#880000",
         Name.Label:                "#A0A000",
@@ -48,15 +48,15 @@ class DefaultStyle(Style):
         Name.Tag:                  "bold #008000",
         Name.Decorator:            "#AA22FF",
 
-        String:                    "#BA2121",
+        String:                    "bold #347C17", #"#BA2121",  strings
         String.Doc:                "italic",
         String.Interpol:           "bold #BB6688",
-        String.Escape:             "bold #BB6622",
+        String.Escape:            "bold #347C17", #"bold #BB6622", escapes within strings
         String.Regex:              "#BB6688",
         #String.Symbol:             "#B8860B",
         String.Symbol:             "#19177C",
         String.Other:              "#008000",
-        Number:                    "#666666",
+        Number:                    "#FFFFFF", #"#666666",   number; 1, 2, 3 etc...
 
         Generic.Heading:           "bold #000080",
         Generic.Subheading:        "bold #800080",
